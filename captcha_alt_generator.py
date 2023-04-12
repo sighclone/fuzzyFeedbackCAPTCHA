@@ -34,7 +34,7 @@ for i in range(6):
     x = offsetter + i * 30
     rgb_low = int(args[4])
     rgb_high = int(args[5])
-    y = random.randint(int(args[2]), int(args[3]))*10
+    y = random.randint(int(args[2]), int(args[3]))*1.2
     draw[0].text((x, y), captcha[i], fill=(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)), font=font)
     # opacity = random.randint(128, 255)  # half to full opacity
 
