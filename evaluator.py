@@ -30,11 +30,11 @@ while i in range(0, len(solution)) and i<len(user_answer):
     sol_len += 1
     accuracy += 1 if solution[i] == user_answer[i] else 0
     i+=1
-accuracy = (accuracy / sol_len) * 100       # get percent value
+accuracy = 1-((accuracy / sol_len) * 100)       # get percent value
 print("Type of accuracy_score is: ", type(accuracy))
 print("accuracy_score is: ", accuracy)
 # Get the time taken to solve from JS frontend
-time_taken = float(a[2])
+time_taken = 11-float(a[2])
 print("time_taken is: ", time_taken)
 print("Type of time_taken is: ", type(time_taken))
 
