@@ -34,7 +34,7 @@ for i in range(6):
     x = offsetter + i * 30
     rgb_low = int(args[4])
     rgb_high = int(args[5])
-    y = random.randint(int(args[2]), int(args[3]))
+    y = random.randint(int(args[2]), int(args[3]))*10
     draw[0].text((x, y), captcha[i], fill=(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)), font=font)
     # opacity = random.randint(128, 255)  # half to full opacity
 
@@ -50,4 +50,4 @@ for i in range(2000):
 # Storing the image, for later retrieval by the frontend
 image[0].save(f'..\\fend\\src\\main\\resources\\com\\sadhu\\just_captchas\\captcha{int(args[8])}.png')
 print("Image saved at:", f'..\\fend\\src\\main\\resources\\com\\sadhu\\just_captchas\\captcha{int(args[8])}.png')
-image[0].show("CAptca0")
+# image[0].show("Captca0")
