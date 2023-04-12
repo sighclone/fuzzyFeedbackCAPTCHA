@@ -34,7 +34,7 @@ accuracy = 1-((accuracy / sol_len) * 100)       # get percent value
 print("Type of accuracy_score is: ", type(accuracy))
 print("accuracy_score is: ", accuracy)
 # Get the time taken to solve from JS frontend
-time_taken = 11-float(a[2])
+time_taken = float(a[2])
 print("time_taken is: ", time_taken)
 print("Type of time_taken is: ", type(time_taken))
 
